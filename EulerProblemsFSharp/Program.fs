@@ -17,7 +17,7 @@ let getProblem optionNumber =
                         | _ -> None
 
 let rec programm () =
-    printfn "Für nächstes Problem valide Zahl eingeben. Bei \"exit\" wird."
+    printfn "Für nächstes Problem valide Zahl eingeben. Bei \"exit\" wird Programm beendet."
     let line = Console.ReadLine()
     match line with 
     | "exit" -> printfn "Beende Programm."
