@@ -18,16 +18,16 @@ let getProblem optionNumber =
 
 let rec programm () =
     printfn "Für nächstes Problem valide Zahl eingeben. Bei \"exit\" wird Programm beendet."
-    let line = Console.ReadLine()
+    let line = Console.ReadLine()  
     match line with 
-    | "exit" -> printfn "Beende Programm."
-    | _ ->  let problem = line |> tryParse
-            let solution = problem  |> getProblem
+     | "exit" -> printfn "Beende Programm."
+     | _ ->     let problem = line |> tryParse
+                let solution = problem  |> getProblem
     
-            match solution with 
-            | None -> printfn "Keine bekannte Nummer: \"%s\". Bitte andere Nummer eingeben." line
-            | Some (number, result) -> printfn "Problem: %i, Lösung: %i" number result
-            programm()
+                match solution with 
+                | None -> printfn "Keine bekannte Nummer: \"%s\". Bitte andere Nummer eingeben." line
+                | Some (number, result) -> printfn "Problem: %i, Lösung: %i" number result
+                programm()
 
     
 [<EntryPoint>]
