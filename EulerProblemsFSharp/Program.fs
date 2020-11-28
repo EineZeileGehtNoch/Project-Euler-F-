@@ -1,7 +1,6 @@
 ﻿// Learn more about F# at http://fsharp.org
 
 open System
-open Problem001
 
 let tryParse (str:String) =
     match Int32.TryParse str with
@@ -14,6 +13,7 @@ let getProblem optionNumber =
     | None -> None
     | Some number -> match number with
                         | 1 -> Some (number, Problem001.getResult())
+                        | 2 -> Some (number, Problem002.getResult())
                         | _ -> None
 
 let rec programm () =
