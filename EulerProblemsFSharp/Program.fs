@@ -12,8 +12,9 @@ let getProblem optionNumber =
     match optionNumber with 
     | None -> None
     | Some number -> match number with
-                        | 1 -> Some (number, Problem001.getResult())
-                        | 2 -> Some (number, Problem002.getResult())
+                        | 1 -> Some (number,(bigint (Problem001.getResult())))
+                        | 2 -> Some (number,(bigint (Problem002.getResult())))
+                        | 3 -> Some (number, Problem003.getResult())
                         | _ -> None
 
 let rec programm () =
@@ -26,7 +27,7 @@ let rec programm () =
     
                 match solution with 
                 | None -> printfn "Keine bekannte Nummer: \"%s\". Bitte andere Nummer eingeben." line
-                | Some (number, result) -> printfn "Problem: %i, Lösung: %i" number result
+                | Some (number, result) -> printfn "Problem: %i, Lösung: %A" number result
                 programm()
 
     
