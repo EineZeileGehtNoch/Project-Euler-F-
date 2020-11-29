@@ -1,5 +1,4 @@
-module EulerProblemsFSharp.Tests
-
+module Problem003Tests
 
 open NUnit.Framework
 

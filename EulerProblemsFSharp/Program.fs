@@ -15,6 +15,7 @@ let getProblem optionNumber =
                         | 1 -> Some (number,(bigint (Problem001.getResult())))
                         | 2 -> Some (number,(bigint (Problem002.getResult())))
                         | 3 -> Some (number, Problem003.getResult())
+                        | 4 -> Some (number, bigint (Problem004.getResult()))
                         | _ -> None
 
 let rec programm () =
