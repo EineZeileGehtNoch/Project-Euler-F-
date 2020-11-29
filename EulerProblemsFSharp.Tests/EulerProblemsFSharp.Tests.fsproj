@@ -9,6 +9,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Imports.fs" />
+    <Compile Include="Problem001Tests.fs" />
+    <Compile Include="Problem002Testse.fs" />
     <Compile Include="Problem003Tests.fs" />
     <Compile Include="Problem004Tests.fs" />
   </ItemGroup>
