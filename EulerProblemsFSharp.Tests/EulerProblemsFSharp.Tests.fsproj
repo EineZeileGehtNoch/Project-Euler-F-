@@ -9,10 +9,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Imports.fs" />
+    <Compile Include="HelperMethods.fs" />
     <Compile Include="Problem001Tests.fs" />
     <Compile Include="Problem002Testse.fs" />
     <Compile Include="Problem003Tests.fs" />
     <Compile Include="Problem004Tests.fs" />
+    <Compile Include="Problem005Tests.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />

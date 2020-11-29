@@ -3,22 +3,7 @@ module Problem004Tests
 
 open NUnit.Framework
 open Problem004
-
-let rec AssertEqualValues (expectedList: 'a list) (list: 'a list) =
-    Assert.AreEqual(List.length expectedList, List.length list, "Länge sollte gleich sein.")
-
-    match expectedList with
-    | [] ->
-        match list with
-        | [] -> Assert.Pass()
-        | _ :: _ -> Assert.Fail("List war kürzer.")
-
-    | expectedHead :: expectedTail ->
-        match list with
-        | [] -> Assert.Fail("ExpectedList war kürzer.")
-        | head :: tail ->
-            Assert.AreEqual(expectedHead, head)
-            AssertEqualValues expectedTail tail
+open HelperMethods
 
 [<SetUp>]
 let Setup () = ()
